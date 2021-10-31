@@ -3,14 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>TinDog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/3fa41704cb.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Bootstrap Scripts -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -26,8 +33,16 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Ubuntu:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -37,7 +52,7 @@
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="">Tindog</a>
+          <a class="navbar-brand" href="">tindog</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -69,11 +84,15 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+            <button type="button" class="btn btn-dark btn-lg download-button">
+              <i class="fab fa-apple"></i> Download
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg download-button">
+              <i class="fab fa-google-play"></i> Download
+            </button>
           </div>
           <div class="col-lg-6">
-            <img src="images/iphone6.png" alt="iphone-mockup" />
+            <img class="title-image" src="images/iphone6.png" alt="iphone-mockup" />
           </div>
         </div>
       </div>
