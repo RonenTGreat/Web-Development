@@ -36,13 +36,13 @@ function checkAnswer(currentLevel) {
     var audio = new Audio("sounds\\wrong.mp3");
     audio.play();
     $("body").addClass("game-over");
+    $("#level-title").text("Game Over, Press Any Key to Restart");
 
     setTimeout(() => {
       $("body").removeClass("game-over");
     }, 200);
+    startOver();
   }
-  $("#level-title").text("Game Over, Press Any Key to Restart");
-  startOver();
 }
 
 function nextSequence() {
@@ -74,7 +74,7 @@ function animatePress(currentColour) {
   }, 100);
 }
 
-function startOver(){
+function startOver() {
   level = 0;
   gamePattern = [];
   started = false;
